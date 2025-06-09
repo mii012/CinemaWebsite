@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CrypticCinema</title> 
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="leftHeader">
+                <img id="logoTitle" src="./pictures/logo.PNG" alt="Logo and Name 'Cryptic Cinema'">
+                <h3 id="slogan">Fears Unleashed, Films Unmasked</h3>
+            </div>
+            <div class="canvasHeader">
+                <canvas id="canvas" width="600" height="80">
+                    <img id="ghostImage" src="./pictures/ghost.png" alt="ghost">
+                </canvas> 
+                <!--<button onclick="animate()"></button> -->
+                <div class="rightHeader">
+                    <div class="PageMenu">
+                        <div id="MenuFilter">Menu</div>
+                        <a id="mainPage" onClick="a1()" href="./index.html">Upcoming<br> <br>Movies</a>
+                        <a id="reviewPage" href="./reviews.html">Reviews</a>
+                        <a id="recommendationPage" href="./recomm.html">Recommendations</a>
+                    </div>
+                    <input id="searchbar" type="text" placeholder="Search">
+                </div> 
+            </div>  
+        </div>
+    </header>
+
+
+
+
+
+
+    <div class="mainContent">
+
+        <div class="leftColumn">
+            <h1 id="titleLeft">Upcoming Movies</h1>
+
+            <div class="slasher">
+                <h2 id="titleSlash">Slasher</h2>
+
+                <div class="mySlides fade">
+                    <div class="terrifier">
+                        <img id="picTerr" src="./pictures/terrifier.jpg" alt="terrifier">
+                        <h3 id="titleTerrText">Terrifier 3</h3>
+                        <div id="textTerr">Terrifier 3 is an upcoming Christmas slasher film written and directed by Damien Leone. The film is a sequel to Terrifier 2 (2022) and will reintroduce possessed survivor Victoria Heyes in a more prominent role in the series. The third film is centered around Art the Clown and is the fourth feature-length film to include the character (after the anthology film All Hallows' Eve), in the Terrifier franchise. The film is scheduled to be released theatrically on October 25, 2024.</div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="saw">
+                        <img id="picSaw" src="./pictures/saw.jpg" alt="saw">
+                        <h3 id="titleSawText">Saw XI</h3>
+                        <div id="textSaw">In December 2023, Lionsgate announced that a sequel, Saw XI, is scheduled to be released on September 27, 2024. Producer Oren Koules stated the upcoming film will likely be a direct sequel to Saw X.</div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            
+
+            <div class="psychological">
+                <h2 id="titlePsy">Psychological</h2>
+                <div class="mySlides2">
+                    <div class="speak">
+                        <img id="picSpeak" src="./pictures/sne.jpg" alt="speak movie">
+                        <h3 id="titleSpeakText">Speak No Evil</h3>
+                        <div id="textSpeak">Speak No Evil is an upcoming American psychological horror-thriller film written and directed by James Watkins. It is a remake of the 2022 Danish film of the same name. Jason Blum serves as a producer through his Blumhouse Productions banner. Speak No Evil is scheduled to be released in the United States by Universal Pictures on August 9, 2024.</div>
+                    </div>
+                </div>
+                <div class="mySlides2">
+                    <div class="home">
+                        <img id="picHome" src="./pictures/sne.jpg" alt="home movie">
+                        <h3 id="titleHomeText">The Home</h3>
+                        <div id="textHome">The Home is an upcoming American psychological horror-thriller film directed by James DeMonaco, written by DeMonaco and Adam Cantor, and starring Pete Davidson. Max, a troubled man, starts working at a retirement home and realizes its residents and caretakers harbor sinister secrets. As he investigates the building and its forbidden fourth floor, he starts to uncover connections to his own past and upbringing as a foster child.</div>
+                    </div>
+                </div>
+
+                <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide2(1)"></span>
+                <span class="dot2" onclick="currentSlide2(2)"></span>
+            </div>
+
+
+            <div class="paranormal">
+                <h2 id="titlePar">Paranormal</h2>
+                <div class="mySlides3">
+                    <div class="imaginary">
+                        <img id="picIma" src="./pictures/imagine.jpg" alt="imaginary">
+                        <h3 id="titleImaText">Imaginary</h3>
+                        <div id="textIma">Imaginary is an upcoming American supernatural horror film directed and produced by Jeff Wadlow and written by Wadlow, Greg Erb and Jason Oremland. Produced by Jason Blum, it is scheduled to be released by Lionsgate on March 8, 2024. When Jessica returns to her childhood home with her family, she finds her old stuffed bear, Chauncey, and sees that her youngest stepdaughter Alice has grown attached to it. After Alice's behavior becomes concerning, and the games that she and Chauncey play turn increasingly sinister, Jessica starts realizing that Chauncey is much more than the stuffed bear she believed him to be for all those years.</div>
+                    </div>
+                </div>
+                <div class="mySlides3">
+                    <div class="nightswim">
+                        <img id="picNight" src="./pictures/night.jpg" alt="night">
+                        <h3 id="titleNightText">Nightswim</h3>
+                        <div id="textNight">Night Swim is a 2024 American supernatural horror film written and directed by Bryce McGuire, and based on the 2014 short film of the same name by McGuire and Rod Blackhurst. Its plot follows a suburban family who discover that their backyard swimming pool is haunted. Jason Blum and James Wan produced the film under their Blumhouse Productions and Atomic Monster banners respectively, and this marks the first film from the two companies to be released following their merger on January 2, 2024.</div>
+                    </div>
+                </div>
+                <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+                <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot3" onclick="currentSlide3(1)"></span>
+                <span class="dot3" onclick="currentSlide3(2)"></span>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="rightColumn"> <!--heading 2 oder 3-->
+            <div class="newsletter"> 
+                <h3 id="titleNewsletter">Subscribe To Our Newsletter</h3>
+                <div id="newsletterText">Our weekly newsletter provides you with the latest and most important posts from our blog!</div>
+                <br>
+                <div class="subscribe">
+                    <input id="searchbar2" type="email" placeholder="Email">
+                    <button id="suscribeButton">Subscribe</button>
+                </div>
+            </div>
+            <div class="werbung"> <!-- noch überlegen was da rein soll-->
+                <h3 id="titleWerbung">Ad</h3>
+                <img id="bildWerbung" src="./pictures/werbung.jpg" alt="werbung">
+            </div>
+            <div class="donation">
+                <h3 id="titleDonation">Donation</h3>
+                <img id="heart" src="./pictures/1006718_cookiebird34_pixel-heart-animation.gif" alt="herz">
+                <input id="donate" type="number" placeholder="Amount">
+                <button id="suscribeButton2">Donate</button>
+                <div id="donationText/Animation">Donors like you make a huge impact on our website. On behalf of CrypticCinema, we can't thank you enough for your continuous support.</div> <!-- schauen, wie man animation reinmacht-->
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <img id="logoTitle2" src="./pictures/logo.PNG" alt="Logo and Name 'Cryptic Cinema'">
+            <div class="about">
+                <div id="titleAbout">About</div> 
+                <div id="textAbout"><br>The #1 Entertainment Destination<br>For Horror<br></div>
+            </div>
+            <div class="contact">
+                <div id="titleContact">Contact</div>
+                <div id="textContact"><br>Instagram <br> Twitter <br> TikTok</div>
+            </div>
+            <div class="imprint">
+                <a id="titleImprint" href="./impressum.html">Imprint</a> 
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>

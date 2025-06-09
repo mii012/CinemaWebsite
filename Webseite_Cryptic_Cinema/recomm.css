@@ -1,0 +1,331 @@
+@font-face {
+    font-family:'title1';
+    src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Bold.ttf') format('truetype'),
+        url('./fonts/PT_Sans_Narrow/PTSansNarrow-Bold.ttf') format('woff');
+
+    font-family:'title2_3Text';
+    src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf') format('truetype'),
+        url('./fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf') format('woff');
+}
+
+body {
+    background-color: #eaeaea;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'title2_3Text';
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #000000;
+    margin-bottom: -1.5em;
+}
+
+.canvasHeader {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+#ghostImage {
+    width: 20%;
+    height: auto;
+}
+
+.leftHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#slogan {
+    display: flex;
+    font-size: 30px;
+    margin-top: 1em;
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+#logoTitle {
+    width: 17em;
+    height: auto;
+    margin-left: 3em;
+}
+
+.rightHeader {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-left: 4em;
+    align-items: flex-start; 
+    margin-top: 0px; 
+}
+
+.PageMenu {
+    display: flex;
+    margin-right: 15em;
+    margin-left: 3em;
+    font-size: 1.3em;
+}
+
+#MenuFilter {
+    font-size: 1.3em;
+    color: #8b0000;
+    padding-right:1em;
+    padding-left: 4em;
+    font-family: 'title2_3Text';
+
+}
+
+#mainPage {
+    border-top: 2px solid #8b0000;
+    text-decoration: none;
+    color:black;
+}
+
+#reviewPage {
+    padding-left:20%;
+    border-top: 2px solid #8b0000;
+    text-decoration: none;
+    color:black;
+    padding-right: 20%;
+}
+
+#OnRecommendationPage {
+    border-top: 5px solid #8b0000;
+    text-decoration: none;
+    color:black;
+}
+
+
+.recBox {
+    background-color: #180000;
+    padding: 20px;
+    color: #eaeaea;
+    padding-bottom: 3em;
+}
+
+.writeBox {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#moviesTitle, #shortTitle {
+    font-size: 30px;
+    border-top: 2px solid #eaeaea;
+    margin-top: 1.5em;
+}
+
+.moviText, .shortText {
+    font-size: 23px;
+}
+
+.writeLeft {
+    width: 30%;
+    padding-top: 3em;
+    border-right: 2px solid #180000;
+}
+
+.boxWithPic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#collage {
+    width: auto;
+    height: 20em;
+    padding-right: 6em;
+    margin-top: -0.8em;
+}
+
+#writeTitle {
+    font-size: 35px;
+}
+
+#inputText {
+    margin-top: 2em;
+    width: 28em;
+    padding-bottom: 40em;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#sendButton {
+    height: 4em;
+    width: 7em;
+}
+
+.writeRight {
+    width: 70%;
+    padding-top: 3em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#titleRight {
+    font-size: 35px;
+}
+
+.userRec {
+    margin-top: 1.3em;
+}
+
+#user1, #user2, #user3 {
+    padding-bottom: 2em;
+    background-color: #580000;
+    margin: 2em;
+    padding-left: 2em;
+    padding-right:2em;
+    padding-top: 1em;
+    color: #eaeaea;
+}
+
+#rate1, #rate2, #rate3 {
+    font-size: 20px;
+   
+}
+
+
+
+.footer {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    color:#8b0000;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding: 10px;
+    border-top: 2px solid #180000;
+}
+
+#titleImprint, #titleContact, #titleAbout {
+    text-decoration: none;
+    color: #8b0000;
+    font-size: 30px;
+}
+
+
+#titleImprint {
+    margin-right: 2em;
+}
+
+#logoTitle2 {
+    height: 150px;
+    width: auto;
+}
+
+#user3:hover {
+    opacity: 0.7;
+}
+
+#user2:hover {
+    opacity: 0.7;
+}
+
+#user1:hover {
+    opacity: 0.7;
+}
+
+
+@media print {
+    #searchbar, #ghostImage, #collage, .writeLeft {
+        display: none;
+    }
+
+    .shortRec {
+        page-break-after: always;
+    }
+}
+
+/*for mobile screen 600px */
+@media only screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column; 
+        border-bottom: 2px solid #eaeaea; 
+    }
+
+    #logoTitle {
+        padding-left: 2em;
+    }
+
+    .PageMenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainPage, #OnRecommendationPage {
+        padding-left: 1.8em;
+    }
+
+    .rightHeader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #searchbar {
+        margin-left: 5em;
+        margin-top: 2em;
+    }
+
+    #canvas {
+        width: 400px;
+        height: auto;
+    }
+
+
+    .boxWithPic {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #collage {
+        width: 27em;
+        height: auto;
+        margin-left: 0.5em;
+    }
+
+    .writeBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .writeLeft {
+        border-right: 2px solid #eaeaea;
+    }
+    
+    #user1, #user2, #user3 {
+        margin-left: -1em;
+        width: 24em;
+        height: auto;
+    }
+
+    #titleRight {
+        margin-left: -0.5em;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logoTitle2 {
+        width: 8em;
+        height: auto;
+    }
+
+    .about, .contact, .imprint {
+        padding-top: 3em;
+    }
+
+    
+}

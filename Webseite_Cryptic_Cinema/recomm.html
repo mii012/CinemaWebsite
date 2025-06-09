@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recomm.css">
+    <script src="index.js"></script>
+    <title>Recommendations</title> 
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="leftHeader">
+                <img id="logoTitle" src="./pictures/logo.PNG" alt="Logo and Name 'Cryptic Cinema'">
+                <h3 id="slogan">Fears Unleashed, Films Unmasked</h3>
+            </div>
+            <div class="canvasHeader">
+                <canvas id="canvas" width="600" height="80">
+                    <img id="ghostImage" src="./pictures/ghost.png" alt="ghost">
+                </canvas> 
+                <!--<button onclick="animate()"></button> -->
+                <div class="rightHeader">
+                    <div class="PageMenu">
+                        <div id="MenuFilter">Menu</div>
+                        <a id="mainPage" onClick="a1()" href="./index.html">Upcoming<br> <br>Movies</a>
+                        <a id="reviewPage" href="./reviews.html">Reviews</a>
+                        <a id="OnRecommendationPage" href="./recomm.html">Recommendations</a>
+                    </div>
+                    <input id="searchbar" type="text" placeholder="Search">
+                </div> 
+            </div>  
+        </div>
+    </header>
+
+
+
+    <div class="mainRec">
+        
+        <div class="recBox">
+            <h1>Recommendations</h1>
+            <div class="movieRec">
+                <h2 id="moviesTitle">Movies</h2>
+                <div class="boxWithPic">
+                    <ul class="moviText">
+                        <li>Midsommar (2019)</li>
+                        <li>Friday the 13th (2009)</li>
+                        <li>Donnie Darko (2001)</li>
+                        <li>Us (2019)</li>
+                        <li>Five Nights at Freddys (2023)</li>
+                        <li>Pearl (2022)</li>
+                        <li>1922 (2017)</li>
+                        <li>Skinamarink (2022)</li>
+                    </ul>  
+                    <img id="collage" src="./pictures/collage.png" alt="collage">
+                </div>
+            </div>
+
+            <div class="shortRec">
+                <h2 id="shortTitle">Short Films</h2>
+                <ul class="shortText">
+                    <li>Curve 
+                        <a href="https://youtu.be/2dD3Fawk4y0?si=4xJiMYfle8eWg3v9">https://youtu.be/2dD3Fawk4y0?si=4xJiMYfle8eWg3v9</a>
+                    </li>
+                    <li>Other Side Of The Box 
+                        <a href="https://youtu.be/TGZg1YqXv9o?si=vs-qlgOqpYVgRj9v">https://youtu.be/TGZg1YqXv9o?si=vs-qlgOqpYVgRj9v</a>
+                    </li>
+                    <li>Midnight Talk 
+                        <a href="https://youtu.be/vs2jV6vQ1K8?si=8idqAt2La3TZf95c">https://youtu.be/vs2jV6vQ1K8?si=8idqAt2La3TZf95c</a>
+                    </li>
+                    <li>Play Me 
+                        <a href="https://youtu.be/03KMLwQUnaI?si=e5bfX3HtXwxQ3lad">https://youtu.be/03KMLwQUnaI?si=e5bfX3HtXwxQ3lad</a>
+                    </li>
+                    <li>This Is Our Home 
+                        <a href="https://youtu.be/Ow2P2kcKpmM?si=1AQrtQGPgdyMXGlf">https://youtu.be/Ow2P2kcKpmM?si=1AQrtQGPgdyMXGlf</a>
+                    </li>
+                    <li>Ghost Dogs 
+                        <a href="https://youtu.be/fNKWAZtSDQk?si=UXE7memxa3G3Zid8">https://youtu.be/fNKWAZtSDQk?si=UXE7memxa3G3Zid8</a>
+                    </li>
+                    <li>We Want Faces So Bad 
+                        <a href="https://youtu.be/PNW8bx8rCaw?si=AcUVlgxhQVpDSL5S">https://youtu.be/PNW8bx8rCaw?si=AcUVlgxhQVpDSL5S</a>
+                    </li>
+                    <li>5 Minute Dating 
+                        <a href="https://youtu.be/5P_6Q2Q0NLk?si=uP8H_ZXEKhYq1u-2">https://youtu.be/5P_6Q2Q0NLk?si=uP8H_ZXEKhYq1u-2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="writeBox">
+            <div class="writeLeft">
+                <div id="writeTitle">Write your own recommendation</div>
+                <div class="textBox">
+                    <input type="text" id="inputText">
+                    <button id="sendButton">Send Review</button>
+                </div>
+            </div>
+            <div class="writeRight">
+                <div id="titleRight">Other Users Recommendation</div>
+                <div class="userRec">
+                    <div id="user1">
+                        <h2>Title: A Classic Horror Gem: "A Nightmare on Elm Street"</h2>
+                        <div id=rate1>Rating: 4.5/5 stars</div><br>
+                        If you're a horror aficionado or just someone seeking a good scare, "A Nightmare on Elm Street" is an absolute must-watch. This iconic film combines elements of supernatural terror with a chilling antagonist that will haunt your dreams.<br>
+                        Wes Craven's masterful direction and Robert Englund's unforgettable portrayal of the sinister Freddy Krueger create an atmosphere of dread that lingers long after the credits roll. The premise, where the teenagers of Elm Street are terrorized in their dreams by a vengeful spirit, is both innovative and deeply unsettling.<br>
+                        What sets "A Nightmare on Elm Street" apart is its ability to blend psychological horror with visceral thrills. As the characters grapple with their own fears and the mysterious backstory of Freddy Krueger, the tension escalates to heart-pounding levels.<br>
+                        While some may find the gore a bit intense, it's all part of the experience in this genre-defining film. So, grab some popcorn, turn off the lights, and prepare for a journey into the darkest recesses of the human psyche. Just don't be surprised if you find yourself checking under the bed before you go to sleep.
+                    </div>
+                    
+                    <div id="user2">
+                        <h2>Title: "Smile": A Creepy Delight</h2>
+                        <div id=rate2>Rating: 4/5 stars</div><br>
+                        For horror fans craving something fresh and unnerving, "Smile" delivers a chilling punch in a compact package. This indie gem takes a simple concept—a mysterious entity haunting a small town—and turns it into a spine-tingling thrill ride.<br>
+                        With its atmospheric cinematography and eerie soundtrack, "Smile" sets the stage for an immersive horror experience. The tension builds steadily as the protagonist unravels the dark secrets lurking beneath the town's facade.<br>
+                        What sets "Smile" apart is its ability to create fear through suggestion rather than explicit gore. The titular entity, never fully revealed, leaves viewers on edge, imagining the worst with every shadowy corner.<br>
+                        While "Smile" may not be for the faint of heart, its tight pacing and inventive scares make it a must-watch for horror enthusiasts. So, dim the lights, brace yourself for the unknown, and prepare to encounter the sinister presence lurking behind every smile.
+                    </div>
+
+                    <div id="user3">
+                        <h2>Title: Dive Into Terror: "It" (2017)</h2>
+                        <div id=rate3>Rating: 4/5 stars</div><br>
+                        For a spine-tingling thrill ride, look no further than "It" (2017). This modern adaptation of Stephen King's iconic novel delivers a chilling experience from start to finish. With a stellar cast and expertly crafted scares, "It" plunges you into the depths of fear like no other.<br>
+                        Director Andy Muschietti expertly captures the essence of King's story, weaving a narrative that is equal parts coming-of-age drama and hair-raising horror. Bill Skarsgård's portrayal of Pennywise the Dancing Clown is nothing short of mesmerizing, instilling a sense of unease with every sinister grin.<br>
+                        While the film's intense moments may leave you clutching the edge of your seat, it's the camaraderie among the young protagonists that truly shines. Their bond adds depth to the story, making you care about their fate in the face of unimaginable terror.<br>
+                        "It" may not reinvent the horror genre, but it's a terrifyingly fun ride that will leave you eager for more. With its blend of nostalgia, suspense, and supernatural horror, this film earns a solid 4 stars and a recommendation for anyone craving a good scare.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <img id="logoTitle2" src="./pictures/logo.PNG" alt="Logo and Name 'Cryptic Cinema'">
+            <div class="about">
+                <div id="titleAbout">About</div> 
+                <div id="textAbout"><br>The #1 Entertainment Destination<br>For Horror<br></div>
+            </div>
+            <div class="contact">
+                <div id="titleContact">Contact</div>
+                <div id="textContact"><br>Instagram <br> Twitter <br> TikTok</div>
+            </div>
+            <div class="imprint">
+                <a id="titleImprint" href="./impressum.html">Imprint</a> 
+            </div>
+        </div>
+    </footer>
+</body>

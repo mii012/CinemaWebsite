@@ -1,0 +1,295 @@
+@font-face {
+    font-family:'title1';
+    src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Bold.ttf') format('truetype'),
+        url('./fonts/PT_Sans_Narrow/PTSansNarrow-Bold.ttf') format('woff');
+
+    font-family:'title2_3Text';
+    src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf') format('truetype'),
+        url('./fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf') format('woff');
+}
+
+body {
+    background-color: #eaeaea;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'title2_3Text';
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #000000;
+    margin-bottom: -1.5em;
+}
+
+.canvasHeader {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+#ghostImage {
+    width: 20%;
+    height: auto;
+}
+
+.leftHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#slogan {
+    display: flex;
+    font-size: 30px;
+    margin-top: 1em;
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+#logoTitle {
+    width: 17em;
+    height: auto;
+    margin-left: 3em;
+}
+
+.rightHeader {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-left: 4em;
+    align-items: flex-start; 
+    margin-top: 0px; 
+}
+
+.PageMenu {
+    display: flex;
+    margin-right: 15em;
+    margin-left: 3em;
+    font-size: 1.3em;
+}
+
+#MenuFilter {
+    font-size: 1.3em;
+    color: #8b0000;
+    padding-right:1em;
+    padding-left: 4em;
+    font-family: 'title2_3Text';
+
+}
+
+#mainPage {
+    border-top: 2px solid #8b0000;
+    text-decoration: none;
+    color:black;
+    padding-right: 20%;
+}
+
+#reviewPage {
+    padding-right: 20%;
+    border-top: 5px solid #8b0000;
+    text-decoration: none;
+    color:black;
+}
+
+#recommendationPage {
+    border-top: 2px solid #8b0000;
+    text-decoration: none;
+    color:black;
+}
+
+
+.mainRev {
+    background-color: #180000;
+    color:#eaeaea;
+    padding: 20px;
+}
+
+#titleRev {
+    padding-bottom: 0.5em;
+    font-size: 35px;
+}
+
+#picShi, #picHer, #picEv, #picPla {
+    width: 40em;
+    height: auto;
+    padding: 2em;
+}
+
+#textShi, #textHer, #textEv, #textPla {
+    padding: 2em;
+    padding-top: 2em;
+    margin-top: 1.5em;
+    font-size: 1.3em;
+    background-color: #580000;
+    padding-bottom: 3em;
+}
+
+.box1, .box2, .box3, .box4 {
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+    margin-top: -2em;
+}
+
+#shiButton, #herButton, #evButton, #plaButton {
+    margin-left: 3.3em;
+    position: absolute;
+    margin-top: -3em;
+
+}
+
+#titleShi, #titleHer, #titleEv, #titlePla {
+    border-top: 2px solid #eaeaea;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    color:#8b0000;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding: 10px;
+}
+
+#titleImprint, #titleContact, #titleAbout {
+    text-decoration: none;
+    color: #8b0000;
+    font-size: 30px;
+}
+
+
+#titleImprint {
+    margin-right: 2em;
+}
+
+#logoTitle2 {
+    height: 150px;
+    width: auto;
+}
+
+#textShi:hover {
+    opacity: 0.7;
+}
+
+#shiButton:hover {
+    opacity: 0.7;
+}
+
+#herButton:hover {
+    opacity: 0.7;
+}
+
+#evButton:hover {
+    opacity: 0.7;
+}
+
+#plaButton:hover {
+    opacity: 0.7;
+}
+
+#textEv:hover {
+    opacity: 0.7;
+}
+
+#textPla:hover {
+    opacity: 0.7;
+}
+
+#textHer:hover {
+    opacity: 0.7;
+}
+
+
+@media print {
+    #searchbar,#picShi, #picHer, #picEv, #picPla, #shiButton, #herButton, #evButton, #plaButton, #ghostImage {
+        display: none;
+    }
+
+    .box2 {
+        page-break-after: always;
+    }
+
+}
+
+/*for mobile screen 600px */
+@media only screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column; 
+        border-bottom: 2px solid #eaeaea; 
+    }
+
+    #logoTitle {
+        padding-left: 2em;
+    }
+
+    .PageMenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainPage, #reviewPage, #recommendationPage {
+        padding-left: 2em;
+    }
+
+    #canvas {
+        width: 400px;
+        height: auto;
+    }
+
+    .rightHeader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #searchbar {
+        margin-left: 5em;
+        margin-top: 2em;
+    }
+
+
+    .mainRev {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: auto;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #picShi, #picHer, #picEv, #picPla {
+        margin-left: -2em;
+        width: 22em;
+        height: auto;
+    }
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logoTitle2 {
+        width: 8em;
+        height: auto;
+    }
+
+    .about, .contact, .imprint {
+        padding-top: 3em;
+    }
+}
